@@ -1,5 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css" media="all"
+      th:href="@{/css/opmaak.css}" href="/css/opmaak.css"/>
+
 <head>
     <meta charset="UTF-8">
     <title>faq</title>
@@ -8,9 +12,12 @@
 <h1>faq</h1>
 <div>
   <ul>
-    <li>
-      a
+    <li th:text="${naam}">
     </li>
+      <li th:text="${straat}">
+      </li>
+      <li th:text="${huisnummer}">
+      </li>
   </ul>
 </div>
 </body>
